@@ -1,17 +1,17 @@
 import { Calendar } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 
-import { addHours } from 'date-fns';
 
 import { CalendarEvent, CalendarModal, Navbar } from '../';
 import { getMessagesES, localizer } from '../../helpers';
 import { useState } from 'react';
-import { useUiStore } from '../../hooks';
+import { useUiStore, useCalendarStore } from '../../hooks';
 
 
 export const CalendarPage = () => {
 
   const { openDateModal } = useUiStore()
+  const {events} = useCalendarStore()
   const [lastView, setLastView] = useState(localStorage.getItem('lastView') || 'week')
 
   const eventStyleGetter = (event, start, end, isSelected) => {
@@ -42,17 +42,7 @@ export const CalendarPage = () => {
   }
 
 
-  const events = [{
-    title: 'Cumpleaños x',
-    notes: 'Hay que comprar el pastel',
-    start: new Date(),
-    end: addHours(new Date(), 0.1),
-    bgColor: '#fafafa',
-    user: {
-      _id: '123',
-      name: 'Iván'
-    }
-  }]
+
 
   return (
     <>

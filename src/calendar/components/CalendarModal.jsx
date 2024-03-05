@@ -34,7 +34,7 @@ export const CalendarModal = () => {
         title: 'Iván',
         notes: 'Parada',
         start: new Date(),
-        start: addHours(new Date(), 2),
+        end: addHours(new Date(), 2),
     });
 
     const titleClass = useMemo(() => {

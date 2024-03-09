@@ -9,7 +9,6 @@ export const useAuthStore = () => {
 
     const startLogin = async ({ email, password }) => {
         dispatch(onchecking())
-        console.log({ email, password })
 
         try {
             const { data } = await calendarApi.post('/auth', { email, password });
@@ -27,6 +26,26 @@ export const useAuthStore = () => {
 
     }
 
+    const startRegister = async ({ email, password, name }) => {
+        dispatch(onchecking())
+
+        try {
+            const { data } = await calendarApi.post('/auth/new', { email, password, name });
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('token-init-date', new Date().getTime());
+            dispatch(onLogin({ name: data.name, uid: data.uid }))
+
+        } catch (error) {
+            dispatch(onLogout(error.response.data?.msg || 'No ha sido posible el registro del usuario :('));
+            setTimeout(() => {
+                dispatch(clearErrorMessage());
+            }, 10);
+
+        }
+
+    }
+
+
     return {
         //Propiedades
         status,
@@ -36,6 +55,7 @@ export const useAuthStore = () => {
 
         //Métodos
         startLogin,
+        startRegister,
 
 
     }

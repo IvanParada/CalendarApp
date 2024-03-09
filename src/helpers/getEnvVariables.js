@@ -1,11 +1,8 @@
-
-
 export const getEnvVariables = () => {
 
     import.meta.env;
 
-    return{
+    return {
         ...import.meta.env
-
     }
 }

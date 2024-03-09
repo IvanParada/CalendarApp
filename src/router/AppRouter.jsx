@@ -17,7 +17,7 @@ export const AppRouter = () => {
 
     if (status === 'checking') {
         return (
-            <h3>Cargnado...</h3>
+            <h3>Cargando...</h3>
         )
     }
 

@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { addHours } from 'date-fns';
 
 
 export const calendarSlice = createSlice({
@@ -19,15 +18,15 @@ export const calendarSlice = createSlice({
         },
         OnUpdateEvent: (state, { payload }) => {
             state.events = state.events.map(event => {
-                if (event._id === payload._id) {
+                if (event.id === payload.id) {
                     return payload;
                 }
                 return event;
             });
         },
-        onDeleteEvent: (state) => {
-            if (state.activeEvent) {
-                state.events = state.events.filter(event => event._id !== state.activeEvent._id);
+        onDeleteEvent: ( state ) => {
+            if ( state.activeEvent ) {
+                state.events = state.events.filter( event => event.id !== state.activeEvent.id );
                 state.activeEvent = null;
             }
         },
@@ -40,14 +39,20 @@ export const calendarSlice = createSlice({
                     state.events.push(event)
                 }
             })
+        },
+        onLogoutCalendar : (state) => {
+            isLoadingEvent= true,
+            events= [],
+            activeEvent= null
         }
     }
 });
 
 export const {
-    onSetActiveEvent,
     onAddNewEvent,
-    OnUpdateEvent,
     onDeleteEvent,
-    onLoadEvents
+    onLoadEvents,
+    onSetActiveEvent,
+    OnUpdateEvent,
+    onLogoutCalendar,
 } = calendarSlice.actions;

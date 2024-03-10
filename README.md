@@ -1,6 +1,6 @@
 # CalendarApp
 ```
-https://calendar-app-two-teal.vercel.app/
+https://calendar-app-seven-beta.vercel.app/
 ```
 ## Instrucciones
 1. Renombrar el .env.template a .env

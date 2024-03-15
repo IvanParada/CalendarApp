@@ -1,11 +1,3 @@
-# CalendarApp
-```
-https://calendar-app-seven-beta.vercel.app/
-```
-
-
-
-
 <h1 align="center"> Calendar App </h1>
 
 ```bash

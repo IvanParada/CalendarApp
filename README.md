@@ -50,9 +50,9 @@ https://calendar-app-seven-beta.vercel.app/
 ## 💻 Características<a name="caract"></a>
 
 ### 1. Autenticación de usuario
-- Permite a los usuarios Registrarse e Iniciar sesión ya sea a través de Google u otro proveedor de correos electronicos, a través de Firebase Authentication.
+- Permite a los usuarios Registrarse e Iniciar sesión, implementado con Firebase Authentication.
 ### 2. Registro de notas
-- El usuario puede registrar eventos, la cual contiene un título, el cuerpo del evento y fechas, utilizando MongoDB para el almacentamiento del texto y Cloudinary para el almacenamiento de las imágenes. El usuario puede actualizar y eliminar estas notas si lo desea.
+- El usuario puede registrar eventos, la cual contiene un título, el cuerpo del evento y fechas, utilizando MongoDB para su almacentamiento. El usuario puede actualizar y eliminar estos eventos si lo desea siempre que hayan sido registrados por él.
 
 
 ## 🚦 Dirigiendo el proyecto<a name="instrucciones"></a>

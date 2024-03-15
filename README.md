@@ -9,7 +9,6 @@ https://calendar-app-seven-beta.vercel.app/
 * [Descripción](#descripcion)
 * [Tecnologías utilizadas](#tec-util)
 * [Caracteristicas](#caract)
-* [Aprendizaje](#aprendizaje)
 * [Dirigiendo el proyecto](#instrucciones)
 * [Demostración](#img)
 ## 📋 Descripción<a name="descripcion"></a>

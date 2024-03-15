@@ -71,7 +71,7 @@ VITE_API_URL= http://localhost:4000/api
 
 ## 🖥️ Demostración<a name="img"></a>
 
-![Login Y Register](![image](https://github.com/IvanParada/CalendarApp/assets/118088453/a5d8835f-73e3-461c-9b5d-5a088dceab4b))
+![Login Y Register](https://github.com/IvanParada/CalendarApp/assets/118088453/a5d8835f-73e3-461c-9b5d-5a088dceab4b)
 ![Calendario](https://github.com/IvanParada/CalendarApp/assets/118088453/48dfeb82-c6b9-45ea-9be6-4315735c6eab)
 ![Evento Seleccionado](https://github.com/IvanParada/CalendarApp/assets/118088453/f77d0028-1282-4700-94e3-d41066189815)
 ![Editar Evento](https://github.com/IvanParada/CalendarApp/assets/118088453/c4c04460-81e8-47da-93b7-ff71ef0d4b29)
